@@ -1,11 +1,4 @@
-/**
- * Resize function without multiple trigger
- * 
- * Usage:
- * $(window).smartresize(function(){  
- *     // code here
- * });
- */
+
 
 
 (function($,sr){
@@ -35,11 +28,7 @@
     jQuery.fn[sr] = function(fn){  return fn ? this.bind('resize', debounce(fn)) : this.trigger(sr); };
 
 })(jQuery,'smartresize');
-/**
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 
 var CURRENT_URL = window.location.href.split('#')[0].split('?')[0],
     $BODY = $('body'),
